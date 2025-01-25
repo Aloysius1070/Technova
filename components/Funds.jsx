@@ -16,7 +16,7 @@ const contributorsData = [
 
 const Funds = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br bg-white py-12 px-6 sm:px-10">
+    <div className="min-h-screen bg-gradient-to-br bg-purple-300 py-12 px-6 sm:px-10">
      
       <div className="max-w-screen-xl mx-auto space-y-16">
 
@@ -80,7 +80,8 @@ const Funds = () => {
                 datasets: [{
                   label: "Count",
                   data: source.map((data) => data.value),
-                  backgroundColor: ['#4C51BF', '#F6AD55', '#ED8936', '#48BB78', '#38B2AC'],
+                  backgroundColor: ['orchid', 'pink', '#734F96', '#48BB78', '#38B2AC'],
+                  borderColor:['#fff']
                 }],
               }}
             />
@@ -100,3 +101,4 @@ const Funds = () => {
 };
 
 export default Funds;
+
