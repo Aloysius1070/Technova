@@ -16,7 +16,7 @@ const contributorsData = [
 
 const Funds = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 to-teal-200 py-12 px-6 sm:px-10">
+    <div className="min-h-screen bg-gradient-to-br bg-white py-12 px-6 sm:px-10">
      
       <div className="max-w-screen-xl mx-auto space-y-16">
 
@@ -30,7 +30,7 @@ const Funds = () => {
         <div className="flex justify-between gap-8">
             
           {/* Line Graph */}
-          <div className="w-full sm:w-1/3 h-80 bg-accent p-6 rounded-2xl shadow-xl transform hover:scale-105 transition-all duration-300">
+          <div className="w-full sm:w-1/3 h-80 bg-white  p-6 rounded-2xl shadow-xl transform hover:scale-105 transition-all duration-300">
             <h3 className="text-2xl font-semibold text-gray-700 mb-4">Line Graph</h3>
             <Line
               data={{
@@ -72,9 +72,9 @@ const Funds = () => {
           </div>
 
           {/* Doughnut Graph */}
-          <div className="w-full sm:w-1/3 h-80 bg-accent p-6 rounded-2xl shadow-xl transform hover:scale-105 transition-all duration-300">
+          <div className="w-full sm:w-1/3 h-80 bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition-all duration-300">
             <h3 className="text-2xl font-semibold text-gray-700 mb-4">Doughnut Graph</h3>
-            <Doughnut
+            <Doughnut className='py-4 '
               data={{
                 labels: source.map((data) => data.label),
                 datasets: [{
@@ -88,7 +88,7 @@ const Funds = () => {
         </div>
 
         {/* Target Progress Section */}
-        <div className="bg-accent p-8 rounded-2xl shadow-xl flex justify-center items-center mt-12 transform hover:scale-105 transition-all duration-300">
+        <div className="bg-white p-8 rounded-2xl shadow-xl flex justify-center items-center mt-12 transform hover:scale-105 transition-all duration-300">
           <div className="w-full sm:w-2/3 lg:w-1/2">
             <Target />
           </div>

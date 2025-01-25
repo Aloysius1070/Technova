@@ -32,7 +32,7 @@ const Target = () => {
   return (
     <div className="flex flex-col items-center space-y-6 p-8 bg-gradient-to-r text-black from-indigo-100 to-teal-100 rounded-lg shadow-xl max-w-md mx-auto">
       {/* Title */}
-      <h1 className="text-3xl font-semibold text-gray-800">Target to 200 Rs</h1>
+      <h1 className="text-3xl font-semibold text-gray-800">Target to 100000 Rs</h1>
 
       {/* Input to update amount */}
       <div className="flex flex-col items-center space-y-4">
